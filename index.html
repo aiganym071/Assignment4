@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Price Calculator</title>
+    <style>
+        .result {
+            font-size: 20px;
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Wedding Price Calculator</h1>
+
+    <form id="calculatorForm">
+        
+        <label for="education">Education:</label>
+        <select id="education">
+            <option value="1.5">Undergraduate degree</option>
+            <option value="1.2">College degree</option>
+            <option value="1.05">High school degree</option>
+            <option value="0.9">Middle school degree</option>
+        </select><br><br>
+
+        
+        <label for="netWorth">Family Net Worth:</label>
+        <select id="netWorth">
+            <option value="2">More than 10,000$</option>
+            <option value="1.5">Between 5,000$ and 10,000$</option>
+            <option value="1.2">Less than 5,000$</option>
+        </select><br><br>
+
+       
+        <label for="caste">Caste:</label>
+        <select id="caste">
+            <option value="100">Brahmin</option>
+            <option value="50">Kshatriya</option>
+            <option value="20">Vaishya</option>
+            <option value="10">Shudra</option>
+            <option value="-50">Varna - untouchable</option>
+        </select><br><br>
+
+   
+        <label>Skills:</label><br>
+        <input type="checkbox" id="musicalInstrument"> Playing a musical instrument (+10$)<br>
+        <input type="checkbox" id="goodCook"> Good cook (+20$)<br>
+        <input type="checkbox" id="easygoing"> Easygoing character (+15$)<br>
+        <input type="checkbox" id="singsWell"> Sings well (+10$)<br><br>
+
+        <label>Age:</label><br>
+        <input type="radio" id="age1" name="age" value="1.5"> Between 18-23<br>
+        <input type="radio" id="age2" name="age" value="1.2"> Between 24-27<br>
+        <input type="radio" id="age3" name="age" value="0.95"> 28+<br><br>
+
+        <label>Reputation:</label><br>
+        <input type="checkbox" id="gossipParents"> Gossips about his/her parent's attitude (-0.85)<br>
+        <input type="checkbox" id="gossipCharacter"> Gossips about his/her character (-0.9)<br>
+        <input type="checkbox" id="generalGossip"> General gossip (-20$)<br><br>
+
+      
+        <button type="button" onclick="calculatePrice()">Calculate Price</button>
+    </form>
+
+
+    <div class="result" id="finalPrice">Final Price: $100</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
